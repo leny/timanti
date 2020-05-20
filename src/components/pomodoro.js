@@ -6,11 +6,20 @@
  * started at 20/05/2020
  */
 
-import React from "react";
+import React, {useState} from "react";
 
-const Pomodoro = () => (
-    <div>
-        <p>{"Hello, Timanti!"}</p>
-    </div>
-);
+import {SESSION_DURATION} from "../core/constants";
+
+import Display from "./display/display";
+
+const Pomodoro = () => {
+    const [timer] = useState(SESSION_DURATION);
+    const [running] = useState(false);
+
+    return (
+        <div>
+            <Display seconds={timer} running={running} />
+        </div>
+    );
+};
 export default Pomodoro;
