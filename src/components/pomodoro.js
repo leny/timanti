@@ -31,8 +31,8 @@ const Pomodoro = () => {
     ]);
 
     return (
-        <div>
-            <div>
+        <div className={["columns", "is-mobile", "is-centered"].join(" ")}>
+            <div className={["column", "is-half"].join(" ")}>
                 <Display seconds={seconds} running={running} />
                 <Tools
                     running={running}
