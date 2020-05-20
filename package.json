@@ -1,0 +1,13 @@
+{
+  "name": "@leny/timanti",
+  "version": "0.0.1",
+  "description": "A small pomodoro with React.",
+  "private" : true,
+  "scripts": { },
+  "author": "leny <leny@becode.org>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leny/timanti.git"
+  }
+}
