@@ -16,25 +16,20 @@ const styles = {
     textAlign: "center",
 };
 
-const Display = ({seconds, running = false}) => {
-    let separator = ":";
-
-    if (running) {
-        separator = seconds % 2 ? ":" : "";
-    }
-
-    return (
-        <div style={styles}>
-            <Cyphers value={Math.floor(seconds / 60)} />
-            <span>{separator}</span>
-            <Cyphers value={seconds % 60} />
-        </div>
-    );
-};
-
+const Display = ({seconds}) => (
+    <div style={styles}>
+        <Cyphers value={Math.floor(seconds / 60)} />
+        <span
+            style={{
+                opacity: seconds % 2 ? 0 : 1,
+            }}>
+            {":"}
+        </span>
+        <Cyphers value={seconds % 60} />
+    </div>
+);
 Display.propTypes = {
     seconds: PropTypes.number.isRequired,
-    running: PropTypes.bool,
 };
 
 export default Display;
