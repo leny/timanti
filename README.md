@@ -6,7 +6,8 @@
 
 ## About
 
-A small pomodoro with React, Bulma & Parcel.
+A small pomodoro with React, Bulma & Parcel.  
+Hosted on [netlify](https://lucid-mestorf-6a22ff.netlify.app).
 
 ## Installation
 
