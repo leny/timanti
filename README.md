@@ -1,22 +1,23 @@
 # BeCode: timanti
 
-> 🛰️ Short project's description
+> ⏲ A small pomodoro with React.
 
 * * *
 
-A short abstract of the project, goals, context… Anything that should be useful for a future reader.
-
 ## About
 
-A more detailed description of the project, with technical details: used langages and techs, context, etc.
+A small pomodoro with React, Bulma & Parcel.
 
-## Installation (if applicable)
+## Installation
 
-Details of process to install / setup dev environment for the project, if applicable.
+- `npm install`
+- `npm run build`
 
-## Usage (if applicable)
+## Usage 
 
-How to use the project, if applicable
+Locally:
+
+- `npm run work`
 
 * * *
 
